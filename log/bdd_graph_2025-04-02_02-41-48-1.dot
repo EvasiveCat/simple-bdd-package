@@ -1,0 +1,33 @@
+digraph BDD {
+	label = "Shannon part + (x5 * x6)";
+	node [shape=circle];
+    "0x560dbd6651a0" [label="x1"];
+    "0x560dbd6651a0" -> "0x560dbd664480" [style=dotted];
+    "0x560dbd664480" [label="x3"];
+    "0x560dbd664480" -> "0x560dbd664290" [style=dotted];
+    "0x560dbd664290" [label="x4"];
+    "0x560dbd664290" -> "0x560dbd663670" [style=dotted];
+    "0x560dbd663670" [label="x5"];
+    "0x560dbd663670" -> "0x560dbd65cec0" [style=dotted];
+    "0x560dbd65cec0" [shape=box, label="0"];
+    "0x560dbd663670" -> "0x560dbd65f750" [style=solid];
+    "0x560dbd65f750" [label="x6"];
+    "0x560dbd65f750" -> "0x560dbd65cf10" [style=dotted];
+    "0x560dbd65cf10" [shape=box, label="1"];
+    "0x560dbd65f750" -> "0x560dbd65cf10" [style=solid];
+    "0x560dbd664290" -> "0x560dbd664190" [style=solid];
+    "0x560dbd664190" [label="x5"];
+    "0x560dbd664190" -> "0x560dbd65cf10" [style=dotted];
+    "0x560dbd664190" -> "0x560dbd65f750" [style=solid];
+    "0x560dbd664480" -> "0x560dbd664390" [style=solid];
+    "0x560dbd664390" [label="x4"];
+    "0x560dbd664390" -> "0x560dbd65cec0" [style=dotted];
+    "0x560dbd664390" -> "0x560dbd664190" [style=solid];
+    "0x560dbd6651a0" -> "0x560dbd6650a0" [style=solid];
+    "0x560dbd6650a0" [label="x2"];
+    "0x560dbd6650a0" -> "0x560dbd664480" [style=dotted];
+    "0x560dbd6650a0" -> "0x560dbd65e760" [style=solid];
+    "0x560dbd65e760" [label="x3"];
+    "0x560dbd65e760" -> "0x560dbd664190" [style=dotted];
+    "0x560dbd65e760" -> "0x560dbd664290" [style=solid];
+}
